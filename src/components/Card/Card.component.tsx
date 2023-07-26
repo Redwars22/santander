@@ -1,31 +1,45 @@
+import { useState } from "react";
+import { IAccountDataModel } from "../../model/accountDataModel";
 import LogoWhiteComponent from "../Logo/LogoWhite.component";
 import style from "./Card.module.scss";
 
-export default function CardComponent(){
-    return(
+export default function CardComponent() {
+    const [accountData, setAccountData] = useState<IAccountDataModel>({
+        name: "Darth Vader",
+        account: {
+            agency: "0002",
+            number: "00.000000-0",
+        },
+        card: {
+            limit: 0,
+            number: "0000"
+        }
+    });
+
+    return (
         <div className={`${style.cardContainer} ${style.shadowBox}`}>
             <div className={style.cardLogo}>
-                <LogoWhiteComponent width="120px" height="auto"/>
+                <LogoWhiteComponent width="120px" height="auto" />
             </div>
 
             <div className={style.cardMiddle}>
-                <img src="../../assets/chip.png" alt="" width="60px"/>
+                <img src="../../assets/chip.png" alt="" width="60px" />
                 <div>
                     <p>XXXX</p>
                     <p>XXXX</p>
                     <p>XXXX</p>
-                    <p>1111</p>
+                    <p>{accountData.card.number}</p>
                 </div>
             </div>
 
             <div className={style.cardFooter}>
-                <p>Olá, Andrew</p>
-                <p>Ag 000</p>
-                <p>CC 1111111111</p>
+                <p>Olá, {accountData.name}</p>
+                <p>Ag {accountData.account.agency}</p>
+                <p>CC {accountData.account.number}</p>
             </div>
 
             <div className={style.cardLimit}>
-                <p>Limite: 10000</p>
+                <p>Limite: {accountData.card.limit}</p>
             </div>
         </div>
     )

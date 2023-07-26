@@ -34,9 +34,9 @@ export default function AmountBoxComponent() {
             </div>
 
             <div className={style.amountCardMiddle}>
-                <p className={style.amountValue}>R$ 0.00</p>
+                <p className={style.amountValue}>R$ {amountData.amountValue}</p>
                 <div className={style.divider}></div>
-                <p className={style.amountTotal}>Saldo + Limite: 0</p>
+                <p className={style.amountTotal}>Saldo + Limite: {amountData.totalAmount}</p>
             </div>
 
         </div>

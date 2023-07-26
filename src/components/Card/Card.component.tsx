@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IAccountDataModel } from "../../model/accountDataModel";
+import { getAccountData } from "../../modules/accountData";
 import LogoWhiteComponent from "../Logo/LogoWhite.component";
 import style from "./Card.module.scss";
 
@@ -15,6 +16,15 @@ export default function CardComponent() {
             number: "0000"
         }
     });
+
+    useEffect(()=>{
+        async function getData(){
+            const data = await getAccountData();
+            console.log(data);
+        }
+
+        getData();
+    })
 
     return (
         <div className={`${style.cardContainer} ${style.shadowBox}`}>

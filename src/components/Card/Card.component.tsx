@@ -48,9 +48,6 @@ export default function CardComponent() {
             <div className={style.cardMiddle}>
                 <img src="../../assets/chip.png" alt="" width="60px" />
                 <div className={style.cardNumber}>
-                    <p>XXXX</p>
-                    <p>XXXX</p>
-                    <p>XXXX</p>
                     <p>{accountData.card.number}</p>
                 </div>
             </div>

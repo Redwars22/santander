@@ -8,7 +8,7 @@ export default function Home(){
         <>
             <HeaderComponent/>
             <div className={style.contentContainer}>
-                <div className={style.cardsBoxes}>
+                <div className={style.cardsBoxers}>
                     <div className={style.contentCard}>
                         <CardComponent/>
                     </div>

@@ -18,7 +18,7 @@ export default function AmountBoxComponent() {
             setAmountData((s)=>({
                 amountValue: data?.account?.balance,
                 totalAmount: data?.account?.limit,
-                limit: data?.account?.balance + data?.account?.limit.
+                limit: data?.account?.balance + data?.account?.limit
             }))
         }
 

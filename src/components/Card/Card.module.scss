@@ -32,6 +32,11 @@
     align-items: center;
 }
 
+.cardNumber {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cardLimit {
     display: flex;
     justify-content: flex-end;

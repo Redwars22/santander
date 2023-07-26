@@ -20,7 +20,20 @@ export default function CardComponent() {
     useEffect(()=>{
         async function getData(){
             const data = await getAccountData();
-            console.log(data);
+            setAccountData((s) => ({
+                ...s,
+                name: data?.name,
+                account: {
+                    ...s.account,
+                    agency: data?.account?.agency,
+                    number: data?.account?.number
+                },
+                card: {
+                    ...s.card,
+                    limit: data?.card?.limit,
+                    number: data?.card?.number
+                }
+            }))
         }
 
         getData();
@@ -34,7 +47,7 @@ export default function CardComponent() {
 
             <div className={style.cardMiddle}>
                 <img src="../../assets/chip.png" alt="" width="60px" />
-                <div>
+                <div className={style.cardNumber}>
                     <p>XXXX</p>
                     <p>XXXX</p>
                     <p>XXXX</p>

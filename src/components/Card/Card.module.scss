@@ -1,0 +1,39 @@
+.shadowBox{
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+	box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+}
+
+.cardContainer {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    border-radius: 12px;
+    background-color: #ED0000;
+    height: 220px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 30px;
+}
+
+.cardFooter {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+}
+
+.cardMiddle {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardLimit {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+}

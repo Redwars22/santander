@@ -1,0 +1,28 @@
+.searchBox {
+    background-color: #F0F0F0;
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #9C9C9C;
+    width: 711px;
+    height: 44px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchBoxText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBoxInput {
+    width: 680px;
+    height: 44px;
+    font-size: 14px;
+    padding-left: 30px;
+    outline: none;
+    background-color: transparent;
+    z-index: 3;
+}

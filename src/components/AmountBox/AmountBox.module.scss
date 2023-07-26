@@ -43,3 +43,9 @@
 	margin-top: 10px;
 	font-family: 'Bebas Neue', sans-serif;
 }
+
+.shadowBox{
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+	box-shadow: 4px 4px 5px 0px rgba(173, 173, 173, 1);
+}

@@ -26,7 +26,7 @@ export default function AmountBoxComponent() {
     })
     
     return (
-        <div className={`${style.amountBoxContainer} shadow-box`}>
+        <div className={`${style.amountBoxContainer} ${style.shadowBox}`}>
 
             <div className={style.amountTitle}>
                 <MoneyIconComponent />

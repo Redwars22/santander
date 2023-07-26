@@ -5,13 +5,21 @@ import MoneyIconComponent from "../MoneyIcon/MoneyIcon.component";
 import style from "./AmountBox.module.scss";
 
 export default function AmountBoxComponent() {
-    const [amountData, setAmountData] = useState<IAmountDataModel>();
+    const [amountData, setAmountData] = useState<IAmountDataModel>({
+        amountValue: 0,
+        totalAmount: 0,
+        limit: 0
+    });
 
     useEffect(()=>{
         async function getAmountData(){
             const data = await getAccountData();
 
-            console.log(data)
+            setAmountData((s)=>({
+                amountValue: data?.account?.balance,
+                totalAmount: data?.account?.limit,
+                limit: data?.account?.balance + data?.account?.limit.
+            }))
         }
 
         getAmountData();

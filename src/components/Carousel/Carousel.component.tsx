@@ -10,7 +10,7 @@ export default function CarouselComponent() {
 
     const updateVisibleItems = () => {
         setVisibleItems(
-            items.slice(activeIndex, activeIndex + 4));
+            items.slice(activeIndex, activeIndex + 3));
     }
 
     const moveLeft = async () => {
@@ -21,7 +21,7 @@ export default function CarouselComponent() {
     }
 
     const moveRight = () => {
-        if (activeIndex < items.length - 4) {
+        if (activeIndex < items.length) {
             setActiveIndex(activeIndex + 1);
             updateVisibleItems();
         }

@@ -1,5 +1,6 @@
 import AmountBoxComponent from "../../components/AmountBox/AmountBox.component";
 import CardComponent from "../../components/Card/Card.component";
+import CarouselComponent from "../../components/Carousel/Carousel.component";
 import HeaderComponent from "../../components/Header/Header.component";
 import style from "../styles/Home.module.scss";
 
@@ -16,7 +17,7 @@ export default function Home(){
                         <AmountBoxComponent/>
                     </div>
                 </div>
-                <div className={style.carousel}></div>
+                <CarouselComponent/>
             </div>
         </>
     )

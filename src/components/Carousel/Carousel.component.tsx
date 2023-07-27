@@ -21,7 +21,7 @@ export default function CarouselComponent() {
     }
 
     const moveRight = () => {
-        if (activeIndex < items.length) {
+        if (activeIndex < items.length - 3) {
             setActiveIndex(activeIndex + 1);
             updateVisibleItems();
         }

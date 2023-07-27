@@ -4,7 +4,7 @@ import { getFeatures } from "../../modules/features";
 import style from "./Carousel.module.scss";
 
 export default function CarouselComponent() {
-    const [items, setItems] = useState<IFeaturesDataModel[]>();
+    const [items, setItems] = useState<IFeaturesDataModel[]>([]);
 
     useEffect(()=>{
         async function getFeatureCards(){

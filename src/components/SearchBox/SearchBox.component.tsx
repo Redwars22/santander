@@ -5,7 +5,7 @@ export default function SearchBoxComponent() {
     return (
         <div className={style.searchBox}>
             <div className={style.searchBoxText}>
-                <input type="text" id="search-box-input" className={style.searchBoxInput} placeholder="Digite aqui sua busca" />
+                <input type="text" className={style.searchBoxInput} placeholder="Digite aqui sua busca" />
                 <SearchIconComponent />
             </div>
         </div>

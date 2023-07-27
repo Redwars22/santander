@@ -6,8 +6,8 @@ import style from "./Carousel.module.scss";
 export default function CarouselComponent() {
     const [items, setItems] = useState<IFeaturesDataModel[]>([]);
 
-    useEffect(()=>{
-        async function getFeatureCards(){
+    useEffect(() => {
+        async function getFeatureCards() {
             const data = await getFeatures();
 
             setItems(data);
@@ -15,7 +15,7 @@ export default function CarouselComponent() {
 
         getFeatureCards();
     });
-    
+
     return (
         <div className={style.carouselSection}>
             <div className={style.carouselContainer}>
@@ -24,7 +24,15 @@ export default function CarouselComponent() {
                     <button className={`${style.controlButton} ${style.previous}`} onClick={() => { }}></button>
                 </div>
 
-                <>{items!.length > 0 ? <>{items!.map((i)=> <p>{i.description}</p>)}</> : <></>}</>
+
+                {items!.length > 0 ? <div className={style.carousel}>{items!.map((i) =>
+                    <div className={style.carouselItem}>
+                        <div className={style.square}>
+                            <img src={i.icon} alt={i.description} />
+                            <p>{i.description}</p>
+                        </div>
+                    </div>
+                )}</div> : <></>}
 
                 <div className={style.carouselControls}>
                     <button className={`${style.controlButton} ${style.next}`} onClick={() => { }}></button>

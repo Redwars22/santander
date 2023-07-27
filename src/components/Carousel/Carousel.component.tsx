@@ -10,7 +10,7 @@ export default function CarouselComponent() {
 
     const updateVisibleItems = () => {
         setVisibleItems(
-            items.slice(activeIndex, activeIndex + 3));
+            items.slice(activeIndex, activeIndex + 4));
     }
 
     const moveLeft = async () => {

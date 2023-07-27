@@ -17,14 +17,14 @@ export default function CarouselComponent() {
     });
     
     return (
-        <div className={style.carousel}>
+        <div className={style.carouselSection}>
             <div className={style.carouselContainer}>
 
                 <div className={style.carouselControls}>
                     <button className={`${style.controlButton} ${style.previous}`} onClick={() => { }}></button>
                 </div>
 
-                <>{items!.map((i)=> <p>{i.description}</p>)}</>
+                <>{items!.length > 0 ? <>{items!.map((i)=> <p>{i.description}</p>)}</> : <></>}</>
 
                 <div className={style.carouselControls}>
                     <button className={`${style.controlButton} ${style.next}`} onClick={() => { }}></button>

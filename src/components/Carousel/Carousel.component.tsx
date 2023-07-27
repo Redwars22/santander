@@ -8,12 +8,12 @@ export default function CarouselComponent() {
     const [visibleItems, setVisibleItems] = useState<IFeaturesDataModel[]>([]);
     let activeIndex: number = 0;
 
-    const updateVisibleItems = async () => {
+    const updateVisibleItems = () => {
         setVisibleItems(
             items.slice(activeIndex, activeIndex + 3));
     }
 
-    const moveLeft = () => {
+    const moveLeft = async () => {
         if (activeIndex > 0) {
             activeIndex--;
             updateVisibleItems();
@@ -32,6 +32,7 @@ export default function CarouselComponent() {
             const data = await getFeatures();
 
             setItems(data);
+            updateVisibleItems();
         }
 
         getFeatureCards();
@@ -46,7 +47,7 @@ export default function CarouselComponent() {
                 </div>
 
 
-                {items!.length > 0 ? <div className={style.carousel}>{items!.map((i) =>
+                {items!.length > 0 ? <div className={style.carousel}>{visibleItems!.map((i) =>
                     <div className={style.carouselItem}>
                         <div className={style.square}>
                             <img src={i.icon} alt={i.description} />

@@ -10,8 +10,6 @@ export default function CarouselComponent() {
         async function getFeatureCards(){
             const data = await getFeatures();
 
-            console.log(data);
-
             setItems(data);
         }
 
@@ -26,7 +24,7 @@ export default function CarouselComponent() {
                     <button className={`${style.controlButton} ${style.previous}`} onClick={() => { }}></button>
                 </div>
 
-                <>{()=> items!.map((i)=> <p>{i.description}</p>)}</>
+                <>{items!.map((i)=> <p>{i.description}</p>)}</>
 
                 <div className={style.carouselControls}>
                     <button className={`${style.controlButton} ${style.next}`} onClick={() => { }}></button>

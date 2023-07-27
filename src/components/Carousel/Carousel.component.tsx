@@ -8,7 +8,7 @@ export default function CarouselComponent() {
     const [visibleItems, setVisibleItems] = useState<IFeaturesDataModel[]>([]);
     let activeIndex: number = 0;
 
-    async const updateVisibleItems = () => {
+    const updateVisibleItems = async () => {
         setVisibleItems(
             items.slice(activeIndex, activeIndex + 3));
     }

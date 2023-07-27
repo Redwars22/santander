@@ -6,7 +6,7 @@ import style from "./Carousel.module.scss";
 export default function CarouselComponent() {
     const [items, setItems] = useState<IFeaturesDataModel[]>([]);
     const [visibleItems, setVisibleItems] = useState<IFeaturesDataModel[]>([]);
-    let activeIndex: number = 0;
+    const [activeIndex, setActiveIndex] = useState<number>(0);
 
     const updateVisibleItems = () => {
         setVisibleItems(
@@ -15,14 +15,14 @@ export default function CarouselComponent() {
 
     const moveLeft = async () => {
         if (activeIndex > 0) {
-            activeIndex--;
+            setActiveIndex(activeIndex - 1);
             updateVisibleItems();
         }
     }
 
     const moveRight = () => {
         if (activeIndex < items.length - 4) {
-            activeIndex++;
+            setActiveIndex(activeIndex + 1);
             updateVisibleItems();
         }
     }

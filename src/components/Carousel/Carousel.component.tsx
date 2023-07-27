@@ -6,13 +6,13 @@ export default function CarouselComponent() {
             <div className={style.carouselContainer}>
 
                 <div className={style.carouselControls}>
-                    <button className="control-button previous" onClick={() => { }}></button>
+                    <button className={`${style.controlButton} ${style.previous}`} onClick={() => { }}></button>
                 </div>
 
                 <p>Carrossel</p>
 
                 <div className={style.carouselControls}>
-                    <button className="control-button next" onClick={() => { }}></button>
+                    <button className={`${style.controlButton} ${style.next}`} onClick={() => { }}></button>
                 </div>
             </div>
         </div>

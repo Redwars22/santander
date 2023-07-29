@@ -15,7 +15,7 @@ export default function CardComponent() {
             limit: 0,
             number: "0000"
         }
-    });
+    }, []);
 
     useEffect(()=>{
         async function getData(){
@@ -37,7 +37,7 @@ export default function CardComponent() {
         }
 
         getData();
-    })
+    }, [])
 
     return (
         <div className={`${style.cardContainer} ${style.shadowBox}`}>

@@ -6,7 +6,10 @@ interface IAndrew {
 
 export default function AndrewNationBadgeComponent(props: IAndrew) {
     return (
-        <div className={style.badgeContainerLight}>
+        <div className={props.mode === "light" ? 
+                        style.badgeContainerLight : 
+                        style.badgeContainerDark
+        }>
             <i className="bi bi-github"></i>
             <p>
                 Um projeto do AndrewNation

@@ -5,40 +5,50 @@
 }
 
 .cardContainer {
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px;
-    border-radius: 12px;
-    background-color: #ED0000;
-    height: 220px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px 30px;
+	color: white;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 24px;
+	border-radius: 12px;
+	background-color: #ED0000;
+	height: 220px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px 30px;
 }
 
-.cardFooter {
-    font-size: 22px;
-    display: flex;
-    justify-content: space-around;
-    height: 30%;
+.cardLogo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 30px;
+	height: 20%;
 }
 
 .cardMiddle {
-    height: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	height: 60px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.cardNumber {
-    display: flex;
-    justify-content: space-between;
+.cardMiddle>div {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.cardFooter {
+	font-size: 22px;
+	display: flex;
+	justify-content: space-around;
+	height: 30%;
 }
 
 .cardLimit {
-    display: flex;
-    justify-content: flex-end;
-    font-size: medium;
+	display: flex;
+	justify-content: flex-end;
+	font-size: medium;
 }

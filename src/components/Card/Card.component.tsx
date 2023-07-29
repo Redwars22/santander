@@ -37,7 +37,7 @@ export default function CardComponent() {
         }
 
         getData();
-    }, [])
+    })
 
     return (
         <div className={`${style.cardContainer} ${style.shadowBox}`}>

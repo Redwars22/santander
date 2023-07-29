@@ -23,7 +23,7 @@ export default function AmountBoxComponent() {
         }
 
         getAmountData();
-    }, [])
+    })
     
     return (
         <div className={`${style.amountBoxContainer} ${style.shadowBox}`}>

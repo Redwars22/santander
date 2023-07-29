@@ -1,4 +1,5 @@
 import AmountBoxComponent from "../../components/AmountBox/AmountBox.component";
+import AndrewNationBadgeComponent from "../../components/AndrewNationBadge/AndrewNationBadge.component";
 import CardComponent from "../../components/Card/Card.component";
 import CarouselComponent from "../../components/Carousel/Carousel.component";
 import HeaderComponent from "../../components/Header/Header.component";
@@ -19,6 +20,7 @@ export default function Home(){
                 </div>
                 <CarouselComponent/>
             </div>
+            <AndrewNationBadgeComponent mode={"light"}/>
         </>
     )
 }

@@ -17,8 +17,8 @@ export default function CardComponent() {
         }
     });
 
-    useEffect(()=>{
-        async function getData(){
+    useEffect(() => {
+        async function getData() {
             const data = await getAccountData();
             setAccountData((s) => ({
                 ...s,
@@ -47,10 +47,12 @@ export default function CardComponent() {
 
             <div className={style.cardMiddle}>
                 <img src="../../assets/chip.png" alt="" width="60px" />
-                <p>xxxx</p>
-			    <p>xxxx</p>
-			    <p>xxxx</p>
-                <p>{accountData.card.number.split(" ")[3]}</p>
+                <div>
+                    <p>xxxx</p>
+                    <p>xxxx</p>
+                    <p>xxxx</p>
+                    <p>{accountData.card.number.split(" ")[3]}</p>
+                </div>
             </div>
 
             <div className={style.cardFooter}>

@@ -32,7 +32,7 @@ export default function CarouselComponent() {
             const data = await getFeatures();
 
             setItems(data);
-            updateVisibleItems();
+            await updateVisibleItems();
         }
 
         getFeatureCards();

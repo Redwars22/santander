@@ -47,9 +47,10 @@ export default function CardComponent() {
 
             <div className={style.cardMiddle}>
                 <img src="../../assets/chip.png" alt="" width="60px" />
-                <div className={style.cardNumber}>
-                    <p>{accountData.card.number}</p>
-                </div>
+                <p>xxxx</p>
+			    <p>xxxx</p>
+			    <p>xxxx</p>
+                <p>{accountData.card.number.split(" ")[3]}</p>
             </div>
 
             <div className={style.cardFooter}>

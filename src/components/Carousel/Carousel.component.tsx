@@ -36,7 +36,7 @@ export default function CarouselComponent() {
         }
 
         getFeatureCards();
-    });
+    }, []);
 
     return (
         <div className={style.carouselSection}>

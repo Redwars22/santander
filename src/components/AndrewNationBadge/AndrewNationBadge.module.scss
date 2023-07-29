@@ -1,10 +1,27 @@
 @mixin badgeContainer {
-    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .badgeContainerLight {
+    @include badgeContainer;
     background-color: rgb(221, 220, 220);
     border: 1px solid darkgrey;
 }
 
-.badgeContainerDark {}
+.badgeContainerDark {
+    @include badgeContainer;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid darkgrey;
+    color: rgb(1, 38, 94);
+}

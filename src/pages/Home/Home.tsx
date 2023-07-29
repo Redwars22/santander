@@ -20,7 +20,7 @@ export default function Home(){
                 </div>
                 <CarouselComponent/>
             </div>
-            <AndrewNationBadgeComponent mode={"light"}/>
+            <AndrewNationBadgeComponent mode={"dark"}/>
         </>
     )
 }

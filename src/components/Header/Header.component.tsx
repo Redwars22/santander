@@ -15,6 +15,9 @@ export default function HeaderComponent(){
                <BellIconComponent/>
                <UserIconComponent/> 
             </div>
+            <div className={styles.responsiveMenuIcon}>
+                <i class="bi bi-menu-up"></i>
+            </div>
         </header>
     )
 }

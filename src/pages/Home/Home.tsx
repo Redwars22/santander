@@ -9,13 +9,7 @@ export default function Home(){
     return(
         <>
             <HeaderComponent/>
-            
-        </>
-    )
-}
-
-/**
-<div className={style.contentContainer}>
+            <div className={style.contentContainer}>
                 <div className={style.cardsBoxers}>
                     <div className={style.contentCard}>
                         <CardComponent/>
@@ -27,4 +21,6 @@ export default function Home(){
                 <CarouselComponent/>
             </div>
             <AndrewNationBadgeComponent mode={"light"}/>
- */
+        </>
+    )
+}

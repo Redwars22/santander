@@ -13,6 +13,22 @@
     justify-content: center;
 }
 
-.contentCard {
-    margin-left: 20px;
+@media screen and (min-width: 780px) {
+    .contentCard {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .contentCard {
+        margin-left: 0px;
+    }
+
+    .cardsBoxers {
+        flex-direction: column;
+    }
+
+    .contentContainer {
+        padding: 5px 8px;
+    }
 }

@@ -13,13 +13,13 @@
     justify-content: center;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1048px) {
     .contentCard {
         margin-left: 20px;
     }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 1047px) {
     .contentCard {
         margin-left: 0px;
     }

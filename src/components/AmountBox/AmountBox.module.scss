@@ -1,8 +1,13 @@
+@media screen and (max-width: 780px) {
+	.amountBoxContainer {
+		width: 400px;
+	}
+}
+
 .amountBoxContainer {
 	border-radius: 12px;
 	background-color: #FFFFFF;
 	height: 220px;
-	width: 400px;
 	padding: 10px 30px;
 	text-align: left;
 }

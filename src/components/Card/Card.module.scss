@@ -52,3 +52,14 @@
 	justify-content: flex-end;
 	font-size: medium;
 }
+
+@media screen and (max-width: 779px) {
+	.cardFooter {
+		font-size: 20px;
+	}
+
+	.cardContainer {
+		margin-bottom: 10px;
+		width: auto;
+	}
+}

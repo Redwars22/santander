@@ -7,6 +7,12 @@
 	margin-right: auto;
 }
 
+@media screen and (max-width: 780px) {
+	.carouselContainer {
+		width: auto;
+	}
+}
+
 .carousel {
 	display: flex;
 	overflow: hidden;
